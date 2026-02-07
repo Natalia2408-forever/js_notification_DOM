@@ -2,6 +2,7 @@
 
 const pushNotification = (posTop, posRight, title, description, type) => {
   const element = document.createElement('div');
+
   element.style.top = posTop + 'px';
   element.style.right = posRight + 'px';
 
@@ -48,7 +49,3 @@ pushNotification(
   'Message example.\n ' + 'Notification should contain title and description.',
   'warning',
 );
-
-pushNotification(10, 10, 'Success', 'Item saved', 'success');
-pushNotification(150, 10, 'Error', 'Save failed', 'error');
-pushNotification(290, 10, 'Warning', 'Check input', 'warning');
